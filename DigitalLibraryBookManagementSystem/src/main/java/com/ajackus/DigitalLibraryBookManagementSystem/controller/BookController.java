@@ -77,5 +77,11 @@ public class BookController {
 		}
 		return ResponseEntity.ok(msg);
 	}
+	
+	@PostMapping("exit")
+	public void exitApplication() {
+		System.out.println("Shutting Down The Digital Library Book Management System...");
+		System.exit(0);
+	}
 }
 
